@@ -112,15 +112,119 @@
         </div>
     </section>
 
-    <!-- Certificates Section (Abbreviated) -->
-    <section id="certificates" class="certificates-section">
-        <div class="container">
-            <h2 class="section-title">📜 Certificates & Achievements</h2>
-            <div class="certificates-grid" id="certificatesContainer">
-                <!-- Loaded via JavaScript -->
+    <!-- Certificates Section -->
+<section id="certificates" class="certificates-section">
+    <div class="container">
+        <h2 class="section-title">📜 My Certificates & Achievements</h2>
+        
+        <!-- Certificate Stats -->
+        <div class="cert-stats">
+            <div class="stat-item">
+                <span class="stat-number">150+</span>
+                <p>Total Certificates</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">9</span>
+                <p>Categories</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <p>Hours of Learning</p>
             </div>
         </div>
-    </section>
+
+        <!-- Search and Filter -->
+        <div class="cert-controls">
+            <div class="cert-search">
+                <i class="fas fa-search"></i>
+                <input type="text" id="certSearch" placeholder="Search certificates...">
+            </div>
+            
+            <div class="cert-filters">
+                <button class="cert-filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All
+                </button>
+                <button class="cert-filter-btn" data-filter="programming">
+                    <i class="fas fa-code"></i> Programming
+                </button>
+                <button class="cert-filter-btn" data-filter="web">
+                    <i class="fas fa-globe"></i> Web Dev
+                </button>
+                <button class="cert-filter-btn" data-filter="mobile">
+                    <i class="fas fa-mobile-alt"></i> Mobile
+                </button>
+                <button class="cert-filter-btn" data-filter="data">
+                    <i class="fas fa-database"></i> Data & AI
+                </button>
+                <button class="cert-filter-btn" data-filter="security">
+                    <i class="fas fa-shield-alt"></i> Security
+                </button>
+                <button class="cert-filter-btn" data-filter="blockchain">
+                    <i class="fas fa-cube"></i> Blockchain
+                </button>
+                <button class="cert-filter-btn" data-filter="testing">
+                    <i class="fas fa-microscope"></i> Testing
+                </button>
+                <button class="cert-filter-btn" data-filter="business">
+                    <i class="fas fa-briefcase"></i> Business
+                </button>
+            </div>
+        </div>
+
+        <!-- Certificates Grid -->
+        <div class="cert-grid" id="certGrid">
+            <!-- Rendered by JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- Certificate Modal -->
+<div class="cert-modal" id="certModal">
+    <div class="cert-modal-content">
+        <button class="modal-close" id="modalClose">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="modal-header">
+            <div class="modal-icon">
+                <i class="fas fa-certificate"></i>
+            </div>
+            <h2 id="modalTitle">Certificate Title</h2>
+        </div>
+
+        <div class="modal-body">
+            <div class="modal-info-grid">
+                <div class="modal-info-item">
+                    <label>Category</label>
+                    <p id="modalCategory">Category</p>
+                </div>
+                <div class="modal-info-item">
+                    <label>Completion Date</label>
+                    <p id="modalDate">Date</p>
+                </div>
+                <div class="modal-info-item">
+                    <label>Certificate ID</label>
+                    <p id="modalId" class="cert-id">ID</p>
+                </div>
+            </div>
+
+            <div class="modal-description">
+                <h3>Certificate Details</h3>
+                <p>This certificate represents successful completion of a comprehensive course in the selected field.</p>
+            </div>
+
+            <div class="modal-actions">
+                <a href="#" id="modalVerify" class="modal-btn modal-btn-primary" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Verify Certificate
+                </a>
+                <button class="modal-btn modal-btn-secondary" onclick="certificateSection.closeModal()">
+                    <i class="fas fa-times"></i> Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <!-- GitHub Section -->
     <section id="github" class="github-section">
