@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moe Kyawaung - Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- CSS Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -23,15 +28,20 @@
                 <li><a href="#wordpress">WordPress</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Profile Picture Section -->
+    <!-- Profile Section -->
     <section id="profile" class="profile-section">
         <div class="container">
             <div class="profile-content">
                 <div class="profile-image-wrapper">
-                    <img src="https://www.gravatar.com/avatar/moekyawaung2026@example.com?s=300&d=identicon" 
+                    <img src="assets/images/profile/profile.jpg" 
                          alt="Moe Kyawaung" 
                          class="profile-image">
                     <div class="profile-badge">
@@ -71,7 +81,6 @@
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">WordPress</span>
                             <span class="skill-tag">UI/UX Design</span>
-                            <span class="skill-tag">Responsive Design</span>
                         </div>
                     </div>
                 </div>
@@ -79,201 +88,37 @@
         </div>
     </section>
 
-    <!-- Certificates Section -->
+    <!-- Certificates Section (Abbreviated) -->
     <section id="certificates" class="certificates-section">
         <div class="container">
             <h2 class="section-title">📜 Certificates & Achievements</h2>
-            
-            <div class="certificates-grid">
-                <!-- Certificate 1 -->
-                <div class="certificate-card">
-                    <div class="certificate-image">
-                        <img src="https://via.placeholder.com/300x200?text=Flutter+Development" alt="Certificate">
-                    </div>
-                    <div class="certificate-content">
-                        <h3>Flutter Development Certification</h3>
-                        <p class="issuer">Issued by: Udemy</p>
-                        <p class="date">Completed: January 2024</p>
-                        <p class="description">Advanced Flutter development with Dart programming language, state management, and API integration.</p>
-                        <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <!-- Certificate 2 -->
-                <div class="certificate-card">
-                    <div class="certificate-image">
-                        <img src="https://via.placeholder.com/300x200?text=Web+Development" alt="Certificate">
-                    </div>
-                    <div class="certificate-content">
-                        <h3>Responsive Web Design</h3>
-                        <p class="issuer">Issued by: freeCodeCamp</p>
-                        <p class="date">Completed: December 2023</p>
-                        <p class="description">Professional web design principles, CSS Grid, Flexbox, and mobile-first approach.</p>
-                        <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <!-- Certificate 3 -->
-                <div class="certificate-card">
-                    <div class="certificate-image">
-                        <img src="https://via.placeholder.com/300x200?text=JavaScript+Mastery" alt="Certificate">
-                    </div>
-                    <div class="certificate-content">
-                        <h3>JavaScript Mastery</h3>
-                        <p class="issuer">Issued by: Codecademy</p>
-                        <p class="date">Completed: November 2023</p>
-                        <p class="description">Complete JavaScript programming from basics to advanced concepts including ES6+.</p>
-                        <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <!-- Certificate 4 -->
-                <div class="certificate-card">
-                    <div class="certificate-image">
-                        <img src="https://via.placeholder.com/300x200?text=WordPress+CMS" alt="Certificate">
-                    </div>
-                    <div class="certificate-content">
-                        <h3>WordPress CMS Mastery</h3>
-                        <p class="issuer">Issued by: LinkedIn Learning</p>
-                        <p class="date">Completed: October 2023</p>
-                        <p class="description">WordPress development, theme customization, plugin development, and site optimization.</p>
-                        <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
+            <div class="certificates-grid" id="certificatesContainer">
+                <!-- Loaded via JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- GitHub Projects Section -->
+    <!-- GitHub Section -->
     <section id="github" class="github-section">
         <div class="container">
             <h2 class="section-title">💻 GitHub Repositories</h2>
-            
             <div class="github-stats">
                 <div class="stat-card">
                     <h3>Repositories</h3>
-                    <p class="stat-number">15+</p>
+                    <p class="stat-number">0</p>
                 </div>
                 <div class="stat-card">
                     <h3>Followers</h3>
-                    <p class="stat-number">50+</p>
+                    <p class="stat-number">0</p>
                 </div>
                 <div class="stat-card">
                     <h3>Stars</h3>
-                    <p class="stat-number">100+</p>
+                    <p class="stat-number">0</p>
                 </div>
             </div>
-
-            <div class="github-repos">
-                <!-- Repo 1 -->
-                <div class="repo-card">
-                    <div class="repo-header">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>Flutter Weather App</h3>
-                        <span class="repo-star">⭐ 25</span>
-                    </div>
-                    <p class="repo-description">A beautiful weather application built with Flutter, fetching real-time weather data from APIs.</p>
-                    <div class="repo-tags">
-                        <span class="tag">Flutter</span>
-                        <span class="tag">Dart</span>
-                        <span class="tag">API</span>
-                    </div>
-                    <a href="https://github.com/Dev-moe-kyawaung/flutter-weather-app" class="repo-link" target="_blank">
-                        View on GitHub <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-
-                <!-- Repo 2 -->
-                <div class="repo-card">
-                    <div class="repo-header">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>E-Commerce Website</h3>
-                        <span class="repo-star">⭐ 18</span>
-                    </div>
-                    <p class="repo-description">Full-stack e-commerce platform with HTML, CSS, JavaScript frontend and Node.js backend.</p>
-                    <div class="repo-tags">
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Node.js</span>
-                    </div>
-                    <a href="https://github.com/Dev-moe-kyawaung/ecommerce-website" class="repo-link" target="_blank">
-                        View on GitHub <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-
-                <!-- Repo 3 -->
-                <div class="repo-card">
-                    <div class="repo-header">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>Todo App with React</h3>
-                        <span class="repo-star">⭐ 12</span>
-                    </div>
-                    <p class="repo-description">Interactive todo application built with React, featuring local storage and smooth animations.</p>
-                    <div class="repo-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                    <a href="https://github.com/Dev-moe-kyawaung/todo-react-app" class="repo-link" target="_blank">
-                        View on GitHub <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-
-                <!-- Repo 4 -->
-                <div class="repo-card">
-                    <div class="repo-header">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>Chat Application</h3>
-                        <span class="repo-star">⭐ 30</span>
-                    </div>
-                    <p class="repo-description">Real-time chat application using Flutter, Firebase, and WebSocket for instant messaging.</p>
-                    <div class="repo-tags">
-                        <span class="tag">Flutter</span>
-                        <span class="tag">Firebase</span>
-                        <span class="tag">WebSocket</span>
-                    </div>
-                    <a href="https://github.com/Dev-moe-kyawaung/flutter-chat-app" class="repo-link" target="_blank">
-                        View on GitHub <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-
-                <!-- Repo 5 -->
-                <div class="repo-card">
-                    <div class="repo-header">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>Portfolio Website</h3>
-                        <span class="repo-star">⭐ 15</span>
-                    </div>
-                    <p class="repo-description">Responsive portfolio website showcasing projects, certificates, and professional experience.</p>
-                    <div class="repo-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">GitHub Pages</span>
-                    </div>
-                    <a href="https://github.com/Dev-moe-kyawaung/portfolio-website" class="repo-link" target="_blank">
-                        View on GitHub <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-
-                <!-- Repo 6 -->
-                <div class="repo-card">
-                    <div class="repo-header">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>Python Automation Script</h3>
-                        <span class="repo-star">⭐ 20</span>
-                    </div>
-                    <p class="repo-description">Useful Python scripts for web scraping, data processing, and automation tasks.</p>
-                    <div class="repo-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Automation</span>
-                        <span class="tag">Scraping</span>
-                    </div>
-                    <a href="https://github.com/Dev-moe-kyawaung/python-automation" class="repo-link" target="_blank">
-                        View on GitHub <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
+            <div class="github-repos" id="githubRepos">
+                <!-- Loaded via JavaScript -->
             </div>
-
             <div class="github-link-container">
                 <a href="https://github.com/Dev-moe-kyawaung" class="btn-primary" target="_blank">
                     View Full GitHub Profile <i class="fab fa-github"></i>
@@ -282,450 +127,37 @@
         </div>
     </section>
 
-    <!-- My Work/Projects Section -->
+    <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="container">
             <h2 class="section-title">🎨 My Work & Projects</h2>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Mobile+Banking+App" alt="Project">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Mobile Banking Application</h3>
-                        <p>User-friendly mobile banking app with secure login, fund transfer, and balance check features.</p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>Firebase</span>
-                            <span>REST API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#">View Details</a>
-                            <a href="https://github.com/Dev-moe-kyawaung">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Social+Media+Platform" alt="Project">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Social Media Platform</h3>
-                        <p>Full-stack social media application with post creation, user interactions, and real-time notifications.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#">View Details</a>
-                            <a href="https://github.com/Dev-moe-kyawaung">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Restaurant+Management" alt="Project">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Restaurant Management System</h3>
-                        <p>Complete restaurant management solution with menu management, order tracking, and inventory control.</p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#">View Details</a>
-                            <a href="https://github.com/Dev-moe-kyawaung">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Learning+Management" alt="Project">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Learning Management System</h3>
-                        <p>Educational platform with course management, student tracking, quizzes, and progress reports.</p>
-                        <div class="project-tech">
-                            <span>HTML/CSS</span>
-                            <span>JavaScript</span>
-                            <span>Database</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#">View Details</a>
-                            <a href="https://github.com/Dev-moe-kyawaung">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Fitness+Tracking" alt="Project">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Fitness Tracking Application</h3>
-                        <p>Mobile fitness app with workout tracking, meal planning, progress charts, and social sharing.</p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>Firebase</span>
-                            <span>Charts</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#">View Details</a>
-                            <a href="https://github.com/Dev-moe-kyawaung">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Travel+Guide" alt="Project">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-btn">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Travel Guide Website</h3>
-                        <p>Interactive travel guide with destination information, booking system, and user reviews.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Maps API</span>
-                            <span>Stripe</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#">View Details</a>
-                            <a href="https://github.com/Dev-moe-kyawaung">GitHub</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="projects-grid" id="projectsContainer">
+                <!-- Loaded via JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- Favorite Apps Section -->
+    <!-- Apps Section -->
     <section id="apps" class="apps-section">
         <div class="container">
             <h2 class="section-title">❤️ My Favorite & Lovable Apps</h2>
-            
-            <div class="apps-grid">
-                <!-- App 1 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Note Keeper Pro</h3>
-                    <p>Simple and elegant note-taking app with cloud sync and offline support.</p>
-                    <div class="app-details">
-                        <span class="rating">⭐ 4.8</span>
-                        <span class="downloads">10K+ Downloads</span>
-                    </div>
-                    <a href="https://play.google.com/store" class="app-link" target="_blank">
-                        <i class="fab fa-google-play"></i> Get App
-                    </a>
-                </div>
-
-                <!-- App 2 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3>Daily Reader</h3>
-                    <p>Read latest news and articles from around the world in one beautiful app.</p>
-                    <div class="app-details">
-                        <span class="rating">⭐ 4.6</span>
-                        <span class="downloads">25K+ Downloads</span>
-                    </div>
-                    <a href="https://play.google.com/store" class="app-link" target="_blank">
-                        <i class="fab fa-google-play"></i> Get App
-                    </a>
-                </div>
-
-                <!-- App 3 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <h3>Smart Calculator</h3>
-                    <p>Advanced calculator with history, variables, and scientific functions.</p>
-                    <div class="app-details">
-                        <span class="rating">⭐ 4.7</span>
-                        <span class="downloads">15K+ Downloads</span>
-                    </div>
-                    <a href="https://play.google.com/store" class="app-link" target="_blank">
-                        <i class="fab fa-google-play"></i> Get App
-                    </a>
-                </div>
-
-                <!-- App 4 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h3>Music Player Plus</h3>
-                    <p>Powerful music player with equalizer, playlists, and beautiful UI.</p>
-                    <div class="app-details">
-                        <span class="rating">⭐ 4.9</span>
-                        <span class="downloads">50K+ Downloads</span>
-                    </div>
-                    <a href="https://play.google.com/store" class="app-link" target="_blank">
-                        <i class="fab fa-google-play"></i> Get App
-                    </a>
-                </div>
-
-                <!-- App 5 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <i class="fas fa-camera"></i>
-                    </div>
-                    <h3>Photo Editor Studio</h3>
-                    <p>Professional photo editing with filters, effects, and advanced tools.</p>
-                    <div class="app-details">
-                        <span class="rating">⭐ 4.5</span>
-                        <span class="downloads">30K+ Downloads</span>
-                    </div>
-                    <a href="https://play.google.com/store" class="app-link" target="_blank">
-                        <i class="fab fa-google-play"></i> Get App
-                    </a>
-                </div>
-
-                <!-- App 6 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                    <h3>Fitness Companion</h3>
-                    <p>Track workouts, count calories, and achieve your fitness goals.</p>
-                    <div class="app-details">
-                        <span class="rating">⭐ 4.8</span>
-                        <span class="downloads">40K+ Downloads</span>
-                    </div>
-                    <a href="https://play.google.com/store" class="app-link" target="_blank">
-                        <i class="fab fa-google-play"></i> Get App
-                    </a>
-                </div>
-
-                <!-- App 7 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <i class="fas fa-language"></i>
-                    </div>
-                    <h3>Language Learner</h3>
-                    <p>Learn new languages with interactive lessons and daily challenges.</p>
-                    <div class="app-details">
-                        <span class="rating">⭐ 4.7</span>
-                        <span class="downloads">20K+ Downloads</span>
-                    </div>
-                    <a href="https://play.google.com/store" class="app-link" target="_blank">
-                        <i class="fab fa-google-play"></i> Get App
-                    </a>
-                </div>
-
-                <!-- App 8 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3>Draw & Paint</h3>
-                    <p>Creative drawing app with multiple brushes, colors, and canvas sizes.</p>
-                    <div class="app-details">
-                        <span class="rating">⭐ 4.6</span>
-                        <span class="downloads">18K+ Downloads</span>
-                    </div>
-                    <a href="https://play.google.com/store" class="app-link" target="_blank">
-                        <i class="fab fa-google-play"></i> Get App
-                    </a>
-                </div>
+            <div class="apps-grid" id="appsContainer">
+                <!-- Loaded via JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- WordPress Sites Section -->
+    <!-- WordPress Section -->
     <section id="wordpress" class="wordpress-section">
         <div class="container">
             <h2 class="section-title">🔗 WordPress Website Collection</h2>
-            
-            <div class="wordpress-grid">
-                <!-- WordPress Site 1 -->
-                <div class="wordpress-card">
-                    <div class="wp-thumbnail">
-                        <img src="https://via.placeholder.com/350x200?text=Business+Website" alt="WordPress Site">
-                        <div class="wp-badge">WordPress</div>
-                    </div>
-                    <div class="wp-content">
-                        <h3>Business Directory Portal</h3>
-                        <p>Professional business directory with advanced search, reviews, and listing management.</p>
-                        <div class="wp-features">
-                            <span class="feature">WooCommerce</span>
-                            <span class="feature">Custom Post Types</span>
-                            <span class="feature">SEO Optimized</span>
-                        </div>
-                        <div class="wp-links">
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-globe"></i> Visit Site
-                            </a>
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-eye"></i> Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- WordPress Site 2 -->
-                <div class="wordpress-card">
-                    <div class="wp-thumbnail">
-                        <img src="https://via.placeholder.com/350x200?text=Blog+Platform" alt="WordPress Site">
-                        <div class="wp-badge">WordPress</div>
-                    </div>
-                    <div class="wp-content">
-                        <h3>Tech Blog & Magazine</h3>
-                        <p>Modern tech blog with categories, tags, authors, and advanced commenting system.</p>
-                        <div class="wp-features">
-                            <span class="feature">Blog Management</span>
-                            <span class="feature">Newsletter</span>
-                            <span class="feature">Social Integration</span>
-                        </div>
-                        <div class="wp-links">
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-globe"></i> Visit Site
-                            </a>
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-eye"></i> Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- WordPress Site 3 -->
-                <div class="wordpress-card">
-                    <div class="wp-thumbnail">
-                        <img src="https://via.placeholder.com/350x200?text=E-commerce+Store" alt="WordPress Site">
-                        <div class="wp-badge">WordPress</div>
-                    </div>
-                    <div class="wp-content">
-                        <h3>Online Store & Shop</h3>
-                        <p>Full-featured online store with product catalog, shopping cart, and payment gateway.</p>
-                        <div class="wp-features">
-                            <span class="feature">WooCommerce</span>
-                            <span class="feature">Payment Gateway</span>
-                            <span class="feature">Inventory</span>
-                        </div>
-                        <div class="wp-links">
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-globe"></i> Visit Site
-                            </a>
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-eye"></i> Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- WordPress Site 4 -->
-                <div class="wordpress-card">
-                    <div class="wp-thumbnail">
-                        <img src="https://via.placeholder.com/350x200?text=Corporate+Site" alt="WordPress Site">
-                        <div class="wp-badge">WordPress</div>
-                    </div>
-                    <div class="wp-content">
-                        <h3>Corporate Website</h3>
-                        <p>Professional corporate site with services, portfolio, team profiles, and contact forms.</p>
-                        <div class="wp-features">
-                            <span class="feature">Elementor</span>
-                            <span class="feature">Custom Pages</span>
-                            <span class="feature">Contact Forms</span>
-                        </div>
-                        <div class="wp-links">
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-globe"></i> Visit Site
-                            </a>
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-eye"></i> Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- WordPress Site 5 -->
-                <div class="wordpress-card">
-                    <div class="wp-thumbnail">
-                        <img src="https://via.placeholder.com/350x200?text=Portfolio+Site" alt="WordPress Site">
-                        <div class="wp-badge">WordPress</div>
-                    </div>
-                    <div class="wp-content">
-                        <h3>Creative Portfolio</h3>
-                        <p>Stunning portfolio website showcasing creative work, projects, and client testimonials.</p>
-                        <div class="wp-features">
-                            <span class="feature">Gallery</span>
-                            <span class="feature">Testimonials</span>
-                            <span class="feature">Lightbox</span>
-                        </div>
-                        <div class="wp-links">
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-globe"></i> Visit Site
-                            </a>
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-eye"></i> Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- WordPress Site 6 -->
-                <div class="wordpress-card">
-                    <div class="wp-thumbnail">
-                        <img src="https://via.placeholder.com/350x200?text=Educational+Platform" alt="WordPress Site">
-                        <div class="wp-badge">WordPress</div>
-                    </div>
-                    <div class="wp-content">
-                        <h3>Educational Platform</h3>
-                        <p>Learning management system with courses, lessons, student tracking, and certificates.</p>
-                        <div class="wp-features">
-                            <span class="feature">LearnDash</span>
-                            <span class="feature">Course Builder</span>
-                            <span class="feature">Certificates</span>
-                        </div>
-                        <div class="wp-links">
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-globe"></i> Visit Site
-                            </a>
-                            <a href="#" class="link-btn" target="_blank">
-                                <i class="fas fa-eye"></i> Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="wordpress-grid" id="wordpressContainer">
+                <!-- Loaded via JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- Contact/Email Collection Section -->
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">📧 Get In Touch</h2>
@@ -784,16 +216,6 @@
                         </div>
                     </div>
 
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-detail">
-                            <h4>Available</h4>
-                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                        </div>
-                    </div>
-
                     <div class="social-media">
                         <h4>Follow Me</h4>
                         <div class="social-icons">
@@ -805,12 +227,6 @@
                             </a>
                             <a href="https://facebook.com/moekyawaung" class="social-icon" target="_blank">
                                 <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/moekyawaung" class="social-icon" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://instagram.com/moekyawaung" class="social-icon" target="_blank">
-                                <i class="fab fa-instagram"></i>
                             </a>
                         </div>
                     </div>
@@ -827,6 +243,11 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript Files -->
+    <script src="js/utils.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
