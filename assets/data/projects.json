@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Mobile Banking Application",
+        "description": "User-friendly mobile banking app with secure login, fund transfer, and balance check features.",
+        "image": "https://via.placeholder.com/400x250?text=Mobile+Banking",
+        "technologies": ["Flutter", "Firebase", "REST API"],
+        "liveLink": "#",
+        "githubLink": "https://github.com/Dev-moe-kyawaung",
+        "detailsLink": "#"
+    },
+    {
+        "id": 2,
+        "title": "E-Commerce Website",
+        "description": "Full-stack e-commerce platform with HTML, CSS, JavaScript frontend and Node.js backend.",
+        "image": "https://via.placeholder.com/400x250?text=E-Commerce",
+        "technologies": ["HTML/CSS", "JavaScript", "Node.js"],
+        "liveLink": "#",
+        "githubLink": "https://github.com/Dev-moe-kyawaung",
+        "detailsLink": "#"
+    }
+]
