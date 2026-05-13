@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "title": "Flutter Development Certification",
+        "issuer": "Udemy",
+        "date": "January 2024",
+        "description": "Advanced Flutter development with Dart programming language, state management, and API integration.",
+        "image": "https://via.placeholder.com/300x200?text=Flutter",
+        "certificateLink": "#"
+    }
+]
