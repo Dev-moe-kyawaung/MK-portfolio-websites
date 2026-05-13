@@ -3,109 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moe Kyawaung - Developer Portfolio</title>
+    <meta name="description" content="Senior Developer | Tech Entrepreneur | Full Stack Developer">
+    <meta name="author" content="Moe Kyaw Aung">
+    <meta property="og:title" content="Moe Kyaw Aung - Senior Developer Portfolio">
+    <meta property="og:description" content="150+ Certificates | 43 GitHub Organizations | 40+ WPA Projects">
+    <meta property="og:image" content="assets/images/profile/profile.jpg">
+    <meta property="og:url" content="https://dev-moe-kyawaung.github.io/">
     
-    <!-- CSS Links -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Moe Kyaw Aung - Senior Developer Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/certificates.css">
+    <link rel="stylesheet" href="css/organizations.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/wpa.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1>🚀 Moe Kyawaung</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#github">GitHub</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#apps">Apps</a></li>
-                <li><a href="#wordpress">WordPress</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-    <!-- Profile Section -->
-    <section id="profile" class="profile-section">
+    <!-- Header -->
+    <header class="header" id="header">
         <div class="container">
-            <div class="profile-content">
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/profile/profile.jpg" 
-                         alt="Moe Kyawaung" 
-                         class="profile-image">
-                    <div class="profile-badge">
-                        <span class="status-online"></span>
-                        Available
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <span class="logo-text">MK</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <button class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                        <li><a href="#organizations" class="nav-link">Organizations</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#wpa" class="nav-link">WPA</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="#contact" class="btn-header">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Moe Kyaw Aung</span>
+                        <br>Senior Developer & Tech Entrepreneur
+                    </h1>
+                    <p class="hero-subtitle">
+                        Full Stack Developer | Tech Leader | 150+ Certifications | 43 GitHub Organizations
+                    </p>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="stat-value">150+</span>
+                            <span class="stat-label">Certificates</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="stat-value">43</span>
+                            <span class="stat-label">Organizations</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="stat-value">40+</span>
+                            <span class="stat-label">WPA Projects</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                            Explore My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Contact Me
+                        </a>
                     </div>
                 </div>
-                
-                <div class="profile-info">
-                    <h2>Moe Kyawaung</h2>
-                    <p class="title">Full Stack Developer | Flutter Enthusiast | Web Designer</p>
-                    
-                    <div class="bio">
-                        <p>Passionate about building beautiful and functional web and mobile applications. 
-                           Experienced in Flutter, HTML/CSS, JavaScript, and modern web technologies.</p>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://github.com/Dev-moe-kyawaung" class="social-btn github">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://gravatar.com/moekyawaung2026" class="social-btn gravatar">
-                            <i class="fas fa-user-circle"></i> Gravatar
-                        </a>
-                        <a href="mailto:moekyawaung2026@example.com" class="social-btn email">
-                            <i class="fas fa-envelope"></i> Email
-                        </a>
-                    </div>
-
-                    <div class="skills">
-                        <h3>Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Flutter</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">WordPress</span>
-                            <span class="skill-tag">UI/UX Design</span>
-                             <span class="skill-chip">🐍 Python</span>
-                            <span class="skill-chip">☕ Java</span>
-                            <span class="skill-chip">🟨 JavaScript</span>
-                             <span class="skill-chip">🔷 TypeScript</span>
-                            <span class="skill-chip">🔴 Ruby</span>
-                           <span class="skill-chip">🦀 Rust</span>
-                            <span class="skill-chip">🐹 Go</span>
-                             <span class="skill-chip">🎯 Dart</span>
-                             <span class="skill-chip">⚛️ React</span>
-                             <span class="skill-chip">▲ Next.js</span>
-                             <span class="skill-chip">🅰️ Angular</span>
-                             <span class="skill-chip">💚 Vue.js</span>
-                             <span class="skill-chip">📦 Node.js</span>
-                              <span class="skill-chip">🐦 Flutter</span>
-                              <span class="skill-chip">🤖 Kotlin</span>
-                              <span class="skill-chip">🐘 PostgreSQL</span>
-                                <span class="skill-chip">🍃 MongoDB</span>
-                                 <span class="skill-chip">⚡ Redis</span>
-                                <span class="skill-chip">🐳 Docker</span>
-                                  <span class="skill-chip">☁️ AWS</span>
-                                  <span class="skill-chip">🔗 Blockchain</span>
-                                   <span class="skill-chip">🤖 Machine Learning</span>
-                                    <span class="skill-chip">🔐 Cyber Security</span>
- 
+                <div class="hero-visual">
+                    <div class="floating-card card-1">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
                         </div>
+                        <div class="card-text">Clean Code</div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="card-text">Innovation</div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="card-text">Problem Solver</div>
+                    </div>
+                    <div class="profile-image-wrapper">
+                        <img src="https://www.gravatar.com/avatar/moekyawaung2026@example.com?s=400&d=identicon" 
+                             alt="Moe Kyaw Aung" class="profile-image">
+                        <div class="status-badge">Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Journey of a Senior Developer</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        With over 5+ years of experience in software development, I've evolved into a senior developer and tech entrepreneur. 
+                        My passion lies in creating innovative solutions that solve real-world problems.
+                    </p>
+                    <p>
+                        I've successfully completed 150+ certifications across various programming languages, web technologies, and emerging fields like AI and blockchain. 
+                        My expertise spans full-stack development, mobile applications, DevOps, and cloud computing.
+                    </p>
+                    <p>
+                        Currently, I'm leading multiple GitHub organizations and contributing to numerous open-source projects. 
+                        I'm dedicated to sharing knowledge and building a strong community of developers.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Full Stack Developer</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Tech Leader & Mentor</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Open Source Contributor</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Lifelong Learner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="https://via.placeholder.com/400x500?text=About" alt="Moe Kyaw Aung" class="about-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card glass">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="stat-value">43</div>
+                    <div class="stat-label">GitHub Organizations</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="stat-value">150+</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-value">40+</div>
+                    <div class="stat-label">WPA Projects</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-value">500+</div>
+                    <div class="stat-label">GitHub Stars</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Expertise across modern technologies</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Vue.js</span>
+                        <span class="skill-badge">Angular</span>
+                        <span class="skill-badge">Next.js</span>
+                        <span class="skill-badge">TypeScript</span>
+                        <span class="skill-badge">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">Go</span>
+                        <span class="skill-badge">Django</span>
+                        <span class="skill-badge">Express</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Mobile</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Flutter</span>
+                        <span class="skill-badge">React Native</span>
+                        <span class="skill-badge">Swift</span>
+                        <span class="skill-badge">Kotlin</span>
+                        <span class="skill-badge">iOS</span>
+                        <span class="skill-badge">Android</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Cloud</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Kubernetes</span>
+                        <span class="skill-badge">AWS</span>
+                        <span class="skill-badge">CI/CD</span>
+                        <span class="skill-badge">Linux</span>
+                        <span class="skill-badge">Git</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data & AI</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Machine Learning</span>
+                        <span class="skill-badge">Data Science</span>
+                        <span class="skill-badge">TensorFlow</span>
+                        <span class="skill-badge">AI/ML</span>
+                        <span class="skill-badge">NLP</span>
+                        <span class="skill-badge">Big Data</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Blockchain</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Solidity</span>
+                        <span class="skill-badge">Web3</span>
+                        <span class="skill-badge">Ethereum</span>
+                        <span class="skill-badge">Smart Contracts</span>
+                        <span class="skill-badge">Blockchain</span>
+                        <span class="skill-badge">Crypto</span>
                     </div>
                 </div>
             </div>
@@ -113,249 +307,183 @@
     </section>
 
     <!-- Certificates Section -->
-<section id="certificates" class="certificates-section">
-    <div class="container">
-        <h2 class="section-title">📜 My Certificates & Achievements</h2>
-        
-        <!-- Certificate Stats -->
-        <div class="cert-stats">
-            <div class="stat-item">
-                <span class="stat-number">150+</span>
-                <p>Total Certificates</p>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">9</span>
-                <p>Categories</p>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">500+</span>
-                <p>Hours of Learning</p>
-            </div>
-        </div>
-
-        <!-- Search and Filter -->
-        <div class="cert-controls">
-            <div class="cert-search">
-                <i class="fas fa-search"></i>
-                <input type="text" id="certSearch" placeholder="Search certificates...">
-            </div>
-            
-            <div class="cert-filters">
-                <button class="cert-filter-btn active" data-filter="all">
-                    <i class="fas fa-th"></i> All
-                </button>
-                <button class="cert-filter-btn" data-filter="programming">
-                    <i class="fas fa-code"></i> Programming
-                </button>
-                <button class="cert-filter-btn" data-filter="web">
-                    <i class="fas fa-globe"></i> Web Dev
-                </button>
-                <button class="cert-filter-btn" data-filter="mobile">
-                    <i class="fas fa-mobile-alt"></i> Mobile
-                </button>
-                <button class="cert-filter-btn" data-filter="data">
-                    <i class="fas fa-database"></i> Data & AI
-                </button>
-                <button class="cert-filter-btn" data-filter="security">
-                    <i class="fas fa-shield-alt"></i> Security
-                </button>
-                <button class="cert-filter-btn" data-filter="blockchain">
-                    <i class="fas fa-cube"></i> Blockchain
-                </button>
-                <button class="cert-filter-btn" data-filter="testing">
-                    <i class="fas fa-microscope"></i> Testing
-                </button>
-                <button class="cert-filter-btn" data-filter="business">
-                    <i class="fas fa-briefcase"></i> Business
-                </button>
-            </div>
-        </div>
-
-        <!-- Certificates Grid -->
-        <div class="cert-grid" id="certGrid">
-            <!-- Rendered by JavaScript -->
-        </div>
-    </div>
-</section>
-
-<!-- Certificate Modal -->
-<div class="cert-modal" id="certModal">
-    <div class="cert-modal-content">
-        <button class="modal-close" id="modalClose">
-            <i class="fas fa-times"></i>
-        </button>
-        
-        <div class="modal-header">
-            <div class="modal-icon">
-                <i class="fas fa-certificate"></i>
-            </div>
-            <h2 id="modalTitle">Certificate Title</h2>
-        </div>
-
-        <div class="modal-body">
-            <div class="modal-info-grid">
-                <div class="modal-info-item">
-                    <label>Category</label>
-                    <p id="modalCategory">Category</p>
-                </div>
-                <div class="modal-info-item">
-                    <label>Completion Date</label>
-                    <p id="modalDate">Date</p>
-                </div>
-                <div class="modal-info-item">
-                    <label>Certificate ID</label>
-                    <p id="modalId" class="cert-id">ID</p>
-                </div>
-            </div>
-
-            <div class="modal-description">
-                <h3>Certificate Details</h3>
-                <p>This certificate represents successful completion of a comprehensive course in the selected field.</p>
-            </div>
-
-            <div class="modal-actions">
-                <a href="#" id="modalVerify" class="modal-btn modal-btn-primary" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> Verify Certificate
-                </a>
-                <button class="modal-btn modal-btn-secondary" onclick="certificateSection.closeModal()">
-                    <i class="fas fa-times"></i> Close
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-    <!-- GitHub Section -->
-    <section id="github" class="github-section">
+    <section id="certificates" class="certificates">
         <div class="container">
-            <h2 class="section-title">💻 GitHub Repositories</h2>
-            <div class="github-stats">
-                <div class="stat-card">
-                    <h3>Repositories</h3>
-                    <p class="stat-number">0</p>
+            <div class="section-header">
+                <h2 class="section-title">Certificates & Achievements</h2>
+                <p class="section-subtitle">150+ Certifications from leading platforms</p>
+            </div>
+            <div class="certificate-overview">
+                <div class="cert-stat">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-count">28</div>
+                        <div class="cert-title">Programming Languages</div>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <h3>Followers</h3>
-                    <p class="stat-number">0</p>
+                <div class="cert-stat">
+                    <div class="cert-icon"><i class="fas fa-globe"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-count">25</div>
+                        <div class="cert-title">Web Development</div>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <h3>Stars</h3>
-                    <p class="stat-number">0</p>
+                <div class="cert-stat">
+                    <div class="cert-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-count">7</div>
+                        <div class="cert-title">Mobile Development</div>
+                    </div>
+                </div>
+                <div class="cert-stat">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-count">10</div>
+                        <div class="cert-title">Data Science & AI</div>
+                    </div>
+                </div>
+                <div class="cert-stat">
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-count">11</div>
+                        <div class="cert-title">Security & DevOps</div>
+                    </div>
+                </div>
+                <div class="cert-stat">
+                    <div class="cert-icon"><i class="fas fa-cube"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-count">4</div>
+                        <div class="cert-title">Blockchain</div>
+                    </div>
+                </div>
+                <div class="cert-stat">
+                    <div class="cert-icon"><i class="fas fa-microscope"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-count">7</div>
+                        <div class="cert-title">Testing & QA</div>
+                    </div>
+                </div>
+                <div class="cert-stat">
+                    <div class="cert-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-count">14</div>
+                        <div class="cert-title">Business & Marketing</div>
+                    </div>
                 </div>
             </div>
-            <div class="github-repos" id="githubRepos">
-                <!-- Loaded via JavaScript -->
+            <div class="cert-action">
+                <a href="https://dev-moe-kyawaung.github.io/MK-portfolio-websites/" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i>
+                    View All Certificates
+                </a>
             </div>
-            <div class="github-link-container">
-                <a href="https://github.com/Dev-moe-kyawaung" class="btn-primary" target="_blank">
-                    View Full GitHub Profile <i class="fab fa-github"></i>
+        </div>
+    </section>
+
+    <!-- GitHub Organizations Section -->
+    <section id="organizations" class="organizations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">GitHub Organizations</h2>
+                <p class="section-subtitle">43 Active Organizations & Communities</p>
+            </div>
+            <div class="orgs-grid" id="orgsGrid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+            <div class="view-more">
+                <a href="https://github.com/Dev-moe-kyawaung" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-github"></i>
+                    View All on GitHub
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">🎨 My Work & Projects</h2>
-            <div class="projects-grid" id="projectsContainer">
-                <!-- Loaded via JavaScript -->
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcase of recent work</p>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Will be populated by JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- Apps Section -->
-    <section id="apps" class="apps-section">
+    <!-- WPA Section -->
+    <section id="wpa" class="wpa">
         <div class="container">
-            <h2 class="section-title">❤️ My Favorite & Lovable Apps</h2>
-            <div class="apps-grid" id="appsContainer">
-                <!-- Loaded via JavaScript -->
+            <div class="section-header">
+                <h2 class="section-title">WPA Projects</h2>
+                <p class="section-subtitle">40+ Web Portfolio Applications built with Lovable</p>
             </div>
-        </div>
-    </section>
-
-    <!-- WordPress Section -->
-    <section id="wordpress" class="wordpress-section">
-        <div class="container">
-            <h2 class="section-title">🔗 WordPress Website Collection</h2>
-            <div class="wordpress-grid" id="wordpressContainer">
-                <!-- Loaded via JavaScript -->
+            <div class="wpa-showcase">
+                <div class="wpa-filters">
+                    <button class="wpa-filter-btn active" data-filter="all">All Projects</button>
+                    <button class="wpa-filter-btn" data-filter="portfolio">Portfolio</button>
+                    <button class="wpa-filter-btn" data-filter="tool">Tools</button>
+                </div>
+                <div class="wpa-grid" id="wpaGrid">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="wpa-action">
+                <a href="https://lovable.dev/invite/ZVLZ2S5" class="btn btn-primary" target="_blank">
+                    <i class="fas fa-star"></i>
+                    Explore More on Lovable
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">📧 Get In Touch</h2>
-            
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's create something amazing together</p>
+            </div>
             <div class="contact-wrapper">
-                <div class="contact-form-container">
-                    <h3>Send Me a Message</h3>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
-                    </form>
-                </div>
-
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    
-                    <div class="contact-method">
+                    <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-detail">
+                        <div>
                             <h4>Email</h4>
-                            <a href="mailto:moekyawaung2026@example.com">moekyawaung2026@example.com</a>
-                            <a href="mailto:moekyawaung13721@example.com">moekyawaung13721@example.com</a>
+                            <a href="mailto:moekyawaung2026@gmail.com">moekyawaung2026@gmail.com</a>
                         </div>
                     </div>
-
-                    <div class="contact-method">
+                    <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+                            <i class="fab fa-github"></i>
                         </div>
-                        <div class="contact-detail">
-                            <h4>Phone</h4>
-                            <a href="tel:+959123456789">+959 123 456 789</a>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Dev-moe-kyawaung" target="_blank">@Dev-moe-kyawaung</a>
                         </div>
                     </div>
-
-                    <div class="contact-method">
+                    <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <div class="contact-detail">
+                        <div>
                             <h4>Location</h4>
-                            <p>Yangon, Myanmar</p>
-                        </div>
-                    </div>
-
-                    <div class="social-media">
-                        <h4>Follow Me</h4>
-                        <div class="social-icons">
-                            <a href="https://github.com/Dev-moe-kyawaung" class="social-icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://twitter.com/moekyawaung" class="social-icon" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://facebook.com/moekyawaung" class="social-icon" target="_blank">
-                                <i class="fab fa-facebook"></i>
-                            </a>
+                            <p>Myanmar | Global</p>
                         </div>
                     </div>
                 </div>
@@ -366,16 +494,32 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Moe Kyawaung. All rights reserved.</p>
-            <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+            <div class="footer-content">
+                <p>&copy; 2024 Moe Kyaw Aung. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Dev-moe-kyawaung" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/moekyawaung" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/moekyawaung" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- JavaScript Files -->
+    <!-- Scripts -->
     <script src="js/utils.js"></script>
-    <script src="js/form.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/animations.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/organizations.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/wpa.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
